@@ -27,7 +27,7 @@ public class Usuario {
 	
 	
 	@NotNull(message = "O Atributo email é obrigatório!")
-	private String email; 
+	private String usuario; 
 	
 	@NotNull(message = "O Atributo senha é obrigatório!")
 	private String senha;
@@ -57,12 +57,22 @@ public class Usuario {
 		this.nome = nome;
 	}
 
-	public String getEmail() {
-		return email;
+	
+
+	public String getUsuario() {
+		return usuario;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setUsuario(String usuario) {
+		this.usuario = usuario;
+	}
+
+	public List<Postagem> getPostagem() {
+		return postagem;
+	}
+
+	public void setPostagem(List<Postagem> postagem) {
+		this.postagem = postagem;
 	}
 
 	public String getSenha() {
@@ -79,6 +89,5 @@ public class Usuario {
 
 	public void setFoto(String foto) {
 		this.foto = foto;
-	}
-	
+	}	
 }
